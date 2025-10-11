@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FSO Games</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Pantalla de bienvenida -->
+<div id="start-screen" class="container text-center mt-5">
+  <h1>Bienvenidos a FSO Games</h1>
+  <p class="mt-4">Elija la cantidad de Equipos:</p>
+  <input type="number" id="numPlayers" min="1" max="6">
+  <button id="confirmPlayers">Confirmar</button>
+</div>
+
+<!-- Modal para nombres de Equipos -->
+<div id="name-modal" class="modal hidden">
+  <div class="modal-content p-4">
+    <h2 class= "mb-3">Ingrese los nombres de los Equipos</h2>
+    <div id="playerNames"></div>
+    <button id="startGame" class="btn mt-3">Comenzar</button>
+  </div>
+</div>
+
+<!-- Tablero del juego -->
+<div id="game-board" class="container mt-4">
+  <h1 class="text-center mb-4">FSO Games - Jeopardy</h1>
+  <div class="row">
+    <div class="col-md-9">
+      <div id="board" class="board-grid"></div>
+    </div>
+    <div class="col-md-3">
+      <h3 class="playerName">EQUIPOS</h3>
+      <div id="players" class="d-flex flex-column mt-3 gap-2"></div>
+      <button id="restart2" class="btn mt-3">Terminar el juego</button>
+    </div>
+     
+  </div>
+</div>
+
+<!-- Modal de pregunta -->
+<div id="question-modal" class="modal hidden">
+  <div class="modal-content p-4">
+    <h3 id="question-category"></h3>
+    <p id="question-text"></p>
+    <div id="options" class="d-flex flex-column gap-2"></div>
+  </div>
+</div>
+
+<!-- Modal final -->
+<div id="end-modal" class="modal hidden">
+  <div class="modal-content p-4 text-center">
+    <h2>¡Fin del juego!</h2>
+    <div id="winner" class="d-flex justify-content-center flex-wrap gap-3 mt-3"></div>
+    <button id="restart" class="btn mt-3">Reiniciar</button>
+  </div>
+</div>
+
+<script src="questions.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+/* ===== Variables de colores ===== */
+:root {
+  --bg: #FDFDFDff;              /* Fondo general */
+  --text: #454A48ff;            /* Texto principal */
+  --header-bg: #EEC6FAff;       /* Cabecera categorías */
+  --header-border:#bca0d9;   /* Borde cabecera */
+  --card-bg: #Fdfdfdff;         /* Tarjetas de puntos */
+  --card-border: #454A48ff;     /* Borde tarjetas */
+  --card-hover: rgb(96, 103, 100);      /* Hover tarjetas */
+  --used-bg: #f0edea;        /* tono neutro claro */
+  --used-shadow-dark: rgba(0, 0, 0, 0.05);
+  --used-shadow-light: rgba(255, 255, 255, 0.6);
+  --color-used: #777;       /* texto gris suave */
+  --player-bg: #FDFDFDff;       /* Cartas de jugadores */
+  --player-border: #f2fafa;   /* Borde jugador */
+  --player-active-border: #F2FAFA; /* Turno activo jugador */
+  --modal-bg: #f9f9f9;        /* Fondo modales */
+  --color-100: #e6d7ff; /* lila suave */
+  --color-200: #d7f9e9; /* verde menta */
+  --color-300: #ffe0e9; /* rosa pastel */
+  --color-400: #fff6d9; /* amarillo claro */
+  --color-500: #d9e7ff; /* celeste */
+  --color-panel: #f9f9f9;
+  --color-text: #333;
+  --color-border: #e0e0e0;
+  --radius: 1.5rem
+  
+}
+
+/* ===== Body y tipografía ===== */
+body {
+  background-color: var(--bg);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+  background-image:  linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("images/bg_1.png");
+ 
+}
+
+h1, h2, h3 {
+  color: var(--text);
+  margin: 0;
+  font-family: 'fredoka';
+  text-shadow: 1px 2px #6C8379ff;
+}
+h1{
+  color: rgb(161, 234, 221);
+  font-weight: 700;
+  font-size: 6rem;
+
+}
+h2{
+  font-weight: 500;
+}
+.playerName{
+  color: #EEC6FAff;
+}
+input{
+  background-color: rgb(236, 244, 243);
+  border: 2px solid var(--color-border);
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  color: var(--text);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+/* ===== Tablero Grid ===== */
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: calc((80vh - 50px) / 6);
+  gap: 6px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.board-grid .category-header {
+  background-color: var(--header-bg);
+  border-radius: 1.5rem;
+  padding: 1rem 1.5rem;
+  box-shadow:
+    6px 6px 12px rgba(0, 0, 0, 0.08),
+    -6px -6px 12px rgba(255, 255, 255, 0.9);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  border: 0.5px solid var(--header-border)
+}
+
+.board-grid .bento-card {
+ border-radius: 1.5rem;
+  padding: 1rem 1.5rem;
+  box-shadow:
+    6px 6px 12px rgba(0, 0, 0, 0.08),
+    -6px -6px 12px rgba(255, 255, 255, 0.9);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  border: 0.5px solid silver
+}
+.board-grid .board-row-100 {
+background: linear-gradient(145deg, var(--color-100), #f4ebff);
+  /* background-color: var(--color-100); */
+}
+.board-grid .board-row-200 {
+  background: linear-gradient(145deg, var(--color-200), #ecfff5);
+  /* background-color: var(--color-200); */
+}
+.board-grid .board-row-300 {
+  background: linear-gradient(145deg, var(--color-300), #fff2f7);
+  /* background-color: var(--color-300); */
+}
+.board-grid .board-row-400 {
+  background: linear-gradient(145deg, var(--color-400), #fffdf3);
+  /* background-color: var(--color-400); */
+}
+.board-grid .board-row-500 {
+  background: linear-gradient(145deg, var(--color-500), #f0f6ff);
+  /* background-color: var(--color-500); */
+}
+.board-grid .bento-card:hover:not(.used) {
+  transform: scale(1.05);
+  box-shadow:
+    inset 4px 4px 8px rgba(0, 0, 0, 0.08),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.8);
+}
+
+
+.board-grid .bento-card.used {
+  background: var(--used-bg);
+  color: var(--color-used);
+  cursor: not-allowed;
+  box-shadow:
+    3px 3px 6px var(--used-shadow-dark),
+    -3px -3px 6px var(--used-shadow-light);
+  transform: none;
+  opacity: 0.7;
+}
+
+/* ===== Player Cards ===== */
+.player-card {
+  background-color: var(--player-bg);
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+  border: 3px solid var(--player-border);
+  transition: all 0.3s ease-in-out;
+  color:#6c8379ff;
+}
+
+.player-card.active {
+  background-color: #F2FAFA;
+  border: 3px solid var(--player-active-border);
+  box-shadow:
+    4px 4px 8px rgba(0, 0, 0, 0.15),
+    -4px -4px 8px rgba(255, 255, 255, 0.7);
+  /* transform: scale(1.03);
+  background-color: #F2FAFA;
+  border: 3px solid var(--player-active-border);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.player-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* === MODAL === */
+.modal {
+  position: fixed;
+  top: 0;
+  /* left: 0; */
+  /* width: 100%; */
+  /* height: 100%; */
+  background: rgba(208, 235, 216, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  position: fixed;
+  top: 0; left:0; right:0; bottom:0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: var(--light);
+  border-radius: 2rem;
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.15),
+              inset -3px -3px 8px rgba(255, 255, 255, 0.5);
+  padding: 2rem 3rem;
+  text-align: center;
+  animation: inflate 0.4s ease;
+  color: var(--dark-text);
+  background-color: var(--modal-bg);
+  border-radius: 15px;
+  max-width: 400px;
+  width: 90%;
+  padding: 20px;
+}
+
+/* === BOTÓN COMENZAR - reiniciar=== */
+#startGame, #restart, #restart2 {
+  background: linear-gradient(145deg, #a4eee1ff, #dcedc1);
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15),
+              inset -2px -2px 6px rgba(255, 255, 255, 0.6);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#startGame:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.12),
+              inset -2px -2px 8px rgba(255,255,255,0.5);
+}
+
+#startGame:active {
+  transform: scale(0.96);
+}
+
+/* === ANIMACIÓN BURBUJA === */
+@keyframes inflate {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+.hidden {
+  display: none;
+}
+
+/* ===== Opciones de pregunta ===== */
+#options button {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#options button:hover {
+  background-color: #BFEFBDff;
+}
+
+
+#confirmPlayers {
+  background: linear-gradient(145deg, rgb(215, 240, 235), rgb(226, 244, 241));
+  border: none;
+  margin-left: 1rem ;
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  cursor: pointer;
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.25),
+              inset -2px -2px 6px rgba(255,255,255,0.6);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#confirmPlayers:hover {
+  transform: scale(1.06);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2),
+              inset -2px -2px 8px rgba(255,255,255,0.5);
+}
+
+#confirmPlayers:active {
+  transform: scale(0.95);
+}
+
+/* ===== Input jugadores ===== */
+.player-name-input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 1024px) {
+  .board-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .board-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+  }
+
+  #players {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .player-card {
+    flex: 1 1 40%;
+    margin: 5px;
+  }
+}
