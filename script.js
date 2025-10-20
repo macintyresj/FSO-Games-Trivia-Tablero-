@@ -123,7 +123,7 @@ function renderPlayers(){
 function initBoard() {
   boardDiv.innerHTML = "";
   const categories = Object.keys(questions);
-  const points = [100, 200, 300, 400, 500];
+  const points = [10000, 15000, 25000, 35000, 50000];
 
   // 🔀 Barajar preguntas al inicio del juego
   categories.forEach(cat => {
@@ -268,3 +268,4 @@ restartBtn2.addEventListener("click", ()=>{
 restartBtn.addEventListener("click", ()=>{
   location.reload();
 });
+
