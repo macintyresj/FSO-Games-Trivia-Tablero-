@@ -1,6 +1,6 @@
 const questions = {
   ACRONIMOS: [
-    {question: "IRS refers to?", options: ["Internal Revenue Service", "Income Return System", "c"], answer: "Internal Revenue Service", points: 10000},
+    {question: "IRS refers to?", options: ["Internal Revenue Service", "Income Return System", "Internal Review System"], answer: "Internal Revenue Service", points: 10000},
     {question: "What does BTC mean in tax context?", options: ["Business Tax Compliance", "Bank Tax Credit", "Basic Tax Calculation", "Business Trust Corporation"], answer: "Business Tax Compliance", points: 25000},
     {question: "FSO refers to?", options: ["Financial Service Office", "Federal Securities Organization", "Finance and Strategy Office", "Foreign Service Operations"], answer: "Financial Service Office", points: 15000},
     {question: "What does AICPA stand for?", options: ["American Institute of Certified Public Accountants", "Association of International Corporate and Public Accountants", "Accounting Institute of Certified Professionals in America", "American Internal Corporate Public Auditors"], answer: "American Institute of Certified Public Accountants", points: 35000},
@@ -111,7 +111,7 @@ const questions = {
   "Cultura Pop": [
     // 10k
     {question: "¿Qué red social es conocida por videos cortos y tendencias?", options: ["TikTok", "Instagram", "Snapchat", "Twitter"], answer: "TikTok", points: 10000},
-    {question: "¿Qué serie popular tiene a Ted, Barney y Robin?", options: ["Cómo Conocí a Tu Madre", "Friends", "The Big Bang Theory", "Modern Family"], answer: "Cómo Conocí a Tu Madre", points: 10000},
+    {question: "¿Qué serie popular tiene a Ted, Barney y Robin?", options: ["How I met your mother", "Friends", "The Big Bang Theory", "Modern Family"], answer: "Cómo Conocí a Tu Madre", points: 10000},
     {question: "¿Quién es el cantante principal de la banda Coldplay?", options: ["Chris Martin", "Bono", "Adam Levine", "Bruno Mars"], answer: "Chris Martin", points: 10000},
 
     // 15k
@@ -137,7 +137,7 @@ const questions = {
 
   "Deportes": [
     // 10k
-    {question: "¿Cuántos jugadores hay en un equipo de fútbol en el campo?", options: ["11", "10", "9", "12"], answer: "11", points: 10000},
+    {question: "¿Quién es el atleta más rápido en la historia de los 100mts llanos?", options: ["Carl Lewis", "Jesse Owens", "Usain Bolt", "Asafa Powell"], answer: "Usain Bolt", points: 10000},
     {question: "¿Qué país ganó la Copa Mundial FIFA 2022?", options: ["Argentina", "Francia", "Brasil", "Alemania"], answer: "Argentina", points: 10000},
     {question: "¿Quién es conocido como 'La Pulga' en el fútbol?", options: ["Lionel Messi", "Cristiano Ronaldo", "Neymar", "Kylian Mbappé"], answer: "Lionel Messi", points: 10000},
 
@@ -159,6 +159,6 @@ const questions = {
     // 50k
     {question: "¿Qué boxeador era conocido como 'The Greatest' y 'The People's Champion'?", options: ["Muhammad Ali", "Mike Tyson", "Floyd Mayweather", "Manny Pacquiao"], answer: "Muhammad Ali", points: 50000},
     {question: "¿Qué país ha ganado más medallas de oro olímpicas en la historia?", options: ["Estados Unidos", "Rusia", "China", "Alemania"], answer: "Estados Unidos", points: 50000},
-    {question: "¿Qué futbolista argentino ganó 7 veces el Balón de Oro?", options: ["Lionel Messi", "Diego Maradona", "Juan Román Riquelme", "Carlos Tevez"], answer: "Lionel Messi", points: 50000}
+    {question: "¿Cuál es el equipo de baloncesto más exitoso de la NBA?", options: ["Los Angeles Lakers", "Boston Celtics", "Chicago Bulls", "Golden State Warriors"], answer: "Boston Celtics", points: 50000}
   ]
 };
