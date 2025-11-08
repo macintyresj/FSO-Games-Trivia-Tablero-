@@ -9,7 +9,7 @@ const questions = {
     {question: "EBII stands for?", options: ["Estimated Business Investment Income","Excess Business Interest Income",  "Excess Bonus Investment Interest", "Effective Business Income Increment"], answer: "Excess Business Interest Income", points: 2500},
     {question: "EBIE stands for?", options: [ "Estimated Bonus Interest Expense", "Excess Book Interest Expense","Excess Business Interest Expense", "Effective Business Investment Expense"], answer: "Excess Business Interest Expense", points: 2500},
     {question: "ATI refers to?", options: ["Annual Taxable Investment", "Accounting Taxable Income", "Adjusted Taxable Income", "Accumulated Taxable Income"], answer: "Adjusted Taxable Income", points: 3500},
-    {question: "UBTI means?", options: [ "Universal Business Taxable Investment", "Undistributed Business Taxable Income", "United Business Tax Indicator"], answer: "Unrelated Business Taxable Income", points: 1000},
+    {question: "UBTI means?", options: [ "Universal Business Taxable Investment", "Undistributed Business Taxable Income", "Unrelated Business Taxable Income", "United Business Tax Indicator"], answer: "Unrelated Business Taxable Income", points: 1000},
     {question: "PTIN stands for?", options: ["Preparer Tax Identification Number", "Professional Tax Identification Number", "Primary Taxpayer Identification Number", "Partnership Tax Identification Number"], answer: "Preparer Tax Identification Number", points: 1500},
     {question: "EIN stands for?", options: [ "Employee Identification Number", "Employer Identification Number","Entity Identification Number", "Enterprise Internal Number"], answer: "Employer Identification Number", points: 1500},
     {question: "SSN refers to?", options: ["Standard Service Number", "Social Savings Number","Social Security Number",  "State Security Number"], answer: "Social Security Number", points: 1500},
@@ -162,6 +162,7 @@ const questions = {
     {question: "¿Cuál es el equipo de baloncesto más exitoso de la NBA?", options: ["Los Angeles Lakers", "Boston Celtics", "Chicago Bulls", "Golden State Warriors"], answer: "Boston Celtics", points: 5000}
   ]
 };
+
 
 
 
