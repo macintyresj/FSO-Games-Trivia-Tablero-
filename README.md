@@ -1,2 +1,2 @@
-# FSO-Games-Trivia-Preguntados
-Based on Preguntados Game
+# FSO-Games-Trivia-Jeopardy
+Based on Jeopardy Game
