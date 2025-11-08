@@ -101,23 +101,23 @@ input{
   font-weight: 600;
   border: 0.5px solid silver
 }
-.board-grid .board-row-10000 {
+.board-grid .board-row-1000 {
 background: linear-gradient(145deg, var(--color-100), #f4ebff);
   /* background-color: var(--color-100); */
 }
-.board-grid .board-row-15000 {
+.board-grid .board-row-1500 {
   background: linear-gradient(145deg, var(--color-200), #ecfff5);
   /* background-color: var(--color-200); */
 }
-.board-grid .board-row-25000 {
+.board-grid .board-row-2500 {
   background: linear-gradient(145deg, var(--color-300), #fff2f7);
   /* background-color: var(--color-300); */
 }
-.board-grid .board-row-35000 {
+.board-grid .board-row-3500 {
   background: linear-gradient(145deg, var(--color-400), #fffdf3);
   /* background-color: var(--color-400); */
 }
-.board-grid .board-row-50000 {
+.board-grid .board-row-5000 {
   background: linear-gradient(145deg, var(--color-500), #f0f6ff);
   /* background-color: var(--color-500); */
 }
@@ -316,4 +316,5 @@ background: linear-gradient(145deg, var(--color-100), #f4ebff);
     margin: 5px;
   }
 }
+
 
