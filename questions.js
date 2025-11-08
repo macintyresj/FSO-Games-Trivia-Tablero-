@@ -103,7 +103,7 @@ const questions = {
     {question: "¿Quién dirigió 'Everything Everywhere All At Once'?", options: [ "Wes Anderson", "Spike Lee", "Dan Kwan y Daniel Scheinert", "Greta Gerwig"], answer: "Dan Kwan y Daniel Scheinert", points: 3500},
 
     // 5k
-    {question: "¿Qué actor ha interpretado más personajes de Marvel en películas live-action?", options: ["Chris Evans", "Robert Downey Jr.", "Chris Hemsworth", "Tom Holland"], answer: "Robert Downey Jr.", points: 5000},
+    {question: "¿Qué actor ha interpretado más personajes de Marvel en películas live-action?", options: ["Chris Evans", "Robert Downey Jr.", "Chris Hemsworth", "Tom Holland"], answer: "Chris Evans", points: 5000},
     {question: "¿Qué franquicia cinematográfica tiene a un personaje llamado Dominic Toretto?", options: ["Rápidos y Furiosos", "Misión Imposible", "James Bond", "The Transporter"], answer: "Rápidos y Furiosos", points: 5000},
     {question: "¿Qué película animada ganó el Oscar a Mejor Película Animada en 2023?", options: ["Puss in Boots: The Last Wish", "Mundos Extraños", "Pinocho de Guillermo del Toro",  "Minions: El Ascenso de Gru"], answer: "Pinocho de Guillermo del Toro", points: 5000}
   ],
@@ -143,7 +143,7 @@ const questions = {
 
     // 1.5k
     {question: "¿Qué tenista ha ganado más títulos de Grand Slam?", options: ["Rafael Nadal", "Roger Federer", "Novak Djokovic", "Serena Williams"], answer: "Novak Djokovic", points: 1500},
-    {question: "¿Qué jugador de baloncesto es conocido como 'King James'?", options: ["LeBron James", "Michael Jordan", "Kobe Bryant", "Stephen Curry"], answer: "LeBron James", points: 1500},
+    {question: "¿Qué jugador de baloncesto es conocido como 'King James'?", options: ["LeBron James", "Michael Jordan", "Kobe Bryant", "Stephen Curry James"], answer: "LeBron James", points: 1500},
     {question: "¿Qué país organizó los Juegos Olímpicos de 2016?", options: ["Brasil", "China", "Reino Unido", "Rusia"], answer: "Brasil", points: 1500},
 
     // 2.5k
@@ -162,5 +162,6 @@ const questions = {
     {question: "¿Cuál es el equipo de baloncesto más exitoso de la NBA?", options: ["Los Angeles Lakers", "Boston Celtics", "Chicago Bulls", "Golden State Warriors"], answer: "Boston Celtics", points: 5000}
   ]
 };
+
 
 
